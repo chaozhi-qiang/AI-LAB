@@ -6,5 +6,5 @@ from mmpretrain.registry import DATASETS
 print(mmpretrain.CamSDD)
 print(mmpretrain.CIFAR100)
 print(mmpretrain.ImageNet21k)
+print(mmpretrain.CamSDD32)
 
-print(mmpretrain.CamSDD34)
