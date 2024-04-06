@@ -1,11 +1,11 @@
-2024/03/24 22:35:42 - mmengine - INFO - 
+2024/03/25 12:23:23 - mmengine - INFO - 
 ------------------------------------------------------------
 System environment:
     sys.platform: win32
     Python: 3.9.18 (main, Sep 11 2023, 14:09:26) [MSC v.1916 64 bit (AMD64)]
     CUDA available: True
     MUSA available: False
-    numpy_random_seed: 384776406
+    numpy_random_seed: 604212914
     GPU 0: NVIDIA GeForce GTX 1650
     CUDA_HOME: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2
     NVCC: Cuda compilation tools, release 12.2, V12.2.91
@@ -34,14 +34,14 @@ Runtime environment:
     cudnn_benchmark: False
     mp_cfg: {'mp_start_method': 'fork', 'opencv_num_threads': 0}
     dist_cfg: {'backend': 'nccl'}
-    seed: 384776406
+    seed: 604212914
     deterministic: False
     Distributed launcher: none
     Distributed training: False
     GPU number: 1
 ------------------------------------------------------------
 
-2024/03/24 22:36:08 - mmengine - INFO - Config:
+2024/03/25 12:23:23 - mmengine - INFO - Config:
 auto_scale_lr = dict(base_batch_size=256)
 data_preprocessor = dict(
     mean=[
@@ -56,7 +56,7 @@ data_preprocessor = dict(
         57.375,
     ],
     to_rgb=True)
-dataset_type = 'CamSDD'
+dataset_type = 'CamSDD34'
 default_hooks = dict(
     checkpoint=dict(
         interval=1, max_keep_ckpts=5, save_best='auto', type='CheckpointHook'),
@@ -135,7 +135,7 @@ test_dataloader = dict(
             dict(crop_size=224, type='CenterCrop'),
             dict(type='PackInputs'),
         ],
-        type='CamSDD',
+        type='CamSDD34',
         with_label=True),
     num_workers=5,
     persistent_workers=True,
@@ -196,7 +196,7 @@ train_dataloader = dict(
             dict(direction='horizontal', prob=0.5, type='RandomFlip'),
             dict(type='PackInputs'),
         ],
-        type='CamSDD',
+        type='CamSDD34',
         with_label=True),
     num_workers=5,
     persistent_workers=True,
@@ -252,7 +252,7 @@ val_dataloader = dict(
             dict(crop_size=224, type='CenterCrop'),
             dict(type='PackInputs'),
         ],
-        type='CamSDD',
+        type='CamSDD34',
         with_label=True),
     num_workers=5,
     persistent_workers=True,
@@ -272,8 +272,8 @@ visualizer = dict(
     ])
 work_dir = './work_dirs\\mobilenetv2_camsdd'
 
-2024/03/24 22:36:11 - mmengine - INFO - Distributed training is not used, all SyncBatchNorm (SyncBN) layers in the model will be automatically reverted to BatchNormXd layers if they are used.
-2024/03/24 22:36:11 - mmengine - INFO - Hooks will be executed in the following order:
+2024/03/25 12:23:28 - mmengine - INFO - Distributed training is not used, all SyncBatchNorm (SyncBN) layers in the model will be automatically reverted to BatchNormXd layers if they are used.
+2024/03/25 12:23:28 - mmengine - INFO - Hooks will be executed in the following order:
 before_run:
 (VERY_HIGH   ) RuntimeInfoHook                    
 (BELOW_NORMAL) LoggerHook                         

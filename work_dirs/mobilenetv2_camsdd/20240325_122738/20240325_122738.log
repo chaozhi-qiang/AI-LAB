@@ -1,11 +1,11 @@
-2024/03/24 22:48:36 - mmengine - INFO - 
+2024/03/25 12:27:42 - mmengine - INFO - 
 ------------------------------------------------------------
 System environment:
     sys.platform: win32
     Python: 3.9.18 (main, Sep 11 2023, 14:09:26) [MSC v.1916 64 bit (AMD64)]
     CUDA available: True
     MUSA available: False
-    numpy_random_seed: 898401738
+    numpy_random_seed: 1677653230
     GPU 0: NVIDIA GeForce GTX 1650
     CUDA_HOME: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.2
     NVCC: Cuda compilation tools, release 12.2, V12.2.91
@@ -34,14 +34,14 @@ Runtime environment:
     cudnn_benchmark: False
     mp_cfg: {'mp_start_method': 'fork', 'opencv_num_threads': 0}
     dist_cfg: {'backend': 'nccl'}
-    seed: 898401738
+    seed: 1677653230
     deterministic: False
     Distributed launcher: none
     Distributed training: False
     GPU number: 1
 ------------------------------------------------------------
 
-2024/03/24 22:48:36 - mmengine - INFO - Config:
+2024/03/25 12:27:42 - mmengine - INFO - Config:
 auto_scale_lr = dict(base_batch_size=256)
 data_preprocessor = dict(
     mean=[
@@ -272,8 +272,8 @@ visualizer = dict(
     ])
 work_dir = './work_dirs\\mobilenetv2_camsdd'
 
-2024/03/24 22:48:40 - mmengine - INFO - Distributed training is not used, all SyncBatchNorm (SyncBN) layers in the model will be automatically reverted to BatchNormXd layers if they are used.
-2024/03/24 22:48:40 - mmengine - INFO - Hooks will be executed in the following order:
+2024/03/25 12:27:46 - mmengine - INFO - Distributed training is not used, all SyncBatchNorm (SyncBN) layers in the model will be automatically reverted to BatchNormXd layers if they are used.
+2024/03/25 12:27:46 - mmengine - INFO - Hooks will be executed in the following order:
 before_run:
 (VERY_HIGH   ) RuntimeInfoHook                    
 (BELOW_NORMAL) LoggerHook                         

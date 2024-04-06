@@ -1,5 +1,5 @@
-from.camsdd import CamSDD34
+from.camsdd import CamSDD
 
 __all__ = [
-    'CamSDD34',
+    'CamSDD',
 ]
